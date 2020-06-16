@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Formula Calculator</title>
+    <link rel="stylesheet" href="ipfpoint.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="header-logo">Formulas</h1>
+    </header>
+
+    <div class="content">
+      <div class="inputarea">
+        <p class="content-title">体重を入力してください</p>
+        <input type="number" id="bwt" step="0.1"><span> kg</span>
+
+        <p class="content-title second">挙上重量を入力してください</p>
+        <input type="number" id="result" step="0.1"><span> kg</span>
+
+        <p class="content-title second">性別を選択してください</p>
+        <select id="gender">
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+        </select>
+
+        <p class="content-title second">種目を選択してください</p>
+        <select id="discipline">
+          <option value="c-pl">Classic Powerlifting</option>
+          <option value="c-bp">Classic Bench Press</option>
+          <option value="e-pl">Equipped Powerlifting</option>
+          <option value="e-bp">Equipped Bench Press</option>
+        </select>
+
+        <div class="second">
+          <button type="button" id="btn">計算する</button>
+        </div>
+      </div>
+
+      <div class="outputarea">
+        <p class="content-title">計算結果</p>
+        <table>
+          <tr>
+            <td>Wilks Formula</td>
+            <td id="wilks"></td>
+          </tr>
+          <tr>
+            <td>Wilks-2 Formula</td>
+            <td id="wilks2"></td>
+          </tr>
+          <tr>
+            <td>DOTS Formula</td>
+            <td id="dots"></td>
+          </tr>
+          <tr>
+            <td>IPF Formula</td>
+            <td id="ipf"></td>
+          </tr>
+          <tr>
+            <td>GOODLIFT Formula</td>
+            <td id="gl"></td>
+          </tr>
+        </table>
+      </div>
+
+      <footer>
+        <div class="copyright">©yuyafukunaga</div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="ipfpoint.js"></script>
+  </body>
+</html>
