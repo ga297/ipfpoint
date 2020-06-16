@@ -2,7 +2,11 @@ html,  body, p, h1 {
   margin: 0;
 }
 
-input, button, select {
+.input {
+  display: inline-block;
+}
+
+.input, button, select {
   font-size: 16px;
   width: 200px;
 }
@@ -16,6 +20,8 @@ header {
   width: 100%;
 	height: 60px;
   background-color: rgb(23, 58, 122);
+  position: fixed;
+  z-index: 100;
 }
 
 .header-logo {
@@ -33,6 +39,7 @@ header {
 
 .inputarea {
   margin: 0 20px;
+  padding-top: 60px;
 }
 
 .content-title {
