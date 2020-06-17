@@ -2,10 +2,6 @@ html,  body, p, h1 {
   margin: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 .input {
   display: inline-block;
 }
